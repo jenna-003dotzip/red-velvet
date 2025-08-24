@@ -1,0 +1,241 @@
+@font-face {
+   font-family: mplus thin;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Thin.ttf) format(truetype);
+}
+
+@font-face {
+   font-family: mplus regular;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf) format(truetype);
+}
+
+@font-face {
+   font-family: mplus medium;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf) format(truetype);
+}
+
+@font-face {
+   font-family: mplus light;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf) format(truetype);
+}
+
+@font-face {
+   font-family: mplus extra bold;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-ExtraBold.ttf) format(truetype);
+}
+
+@font-face {
+   font-family: mplus bold;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf) format(truetype);
+}
+
+@font-face {
+   font-family: mplus black;
+   src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Black.ttf) format(truetype);
+}
+
+/*Styles*/
+
+html {
+    background-color: rgb(250, 182, 169);
+    font-family: mplus regular;
+}
+
+body {
+    background-color: rgb(255, 245, 243);
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1100px;
+    min-width: 720px;
+}
+ 
+body > header > a > img {
+	display: block;
+	width: 100%;
+}
+
+header {
+   font-family: mplus medium;
+}
+
+nav li a {
+   display: block;
+   width: 20%;
+   float: left;
+   text-align: center;
+   color: rgb(255, 245, 243);
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+
+nav a:link, 
+nav a:visited {
+   background-color: rgb(46, 80, 75);
+   color: rgb(214, 233, 230);
+}
+
+nav a:hover, 
+nav a:active {
+   background-color: rgb(97, 171, 160);
+   color: rgb(12, 48, 42);
+}
+
+footer {
+   background-color: rgb(143, 38, 34);
+}
+
+h1 {
+   font-family: mplus black;
+   font-size: 2em;
+   text-align: center;
+   vertical-align: top;
+   padding-bottom: 15px;
+   color: rgb(71, 20, 18);
+}
+
+h2 {
+   font-family: mplus extra bold;
+}
+
+h4 {
+   font-family: mplus medium;
+}
+
+.heading {
+   font-family: mplus bold;
+   margin-bottom: 5px;
+   font-size: 1.2em;
+}  
+
+footer > h4 {
+   text-align: center;
+   padding-top: 15px;
+   font-size: 2em;
+   color: rgb(250, 182, 169);
+}
+
+.heading {
+   color: rgb(250, 182, 169);
+}
+
+ul#group {
+   text-align: left;
+   margin-left: 60%;
+   margin-right: auto;
+   margin-bottom: 15px;
+}
+
+ul#member {
+   text-align: left;
+   margin-right: 60%;
+   margin-left: auto;
+}
+
+ul#group a:link, 
+ul#group a:visited,
+ul#member a:link,
+ul#member a:visited {
+   color: rgb(255, 245, 243);
+}
+
+ul#group a:hover, 
+ul#group a:active,
+ul#member a:hover,
+ul#member a:active {
+   color: rgb(250, 182, 169);
+}
+
+/*aside*/
+
+aside {
+   text-align: center;
+   background-color: rgb(250, 230, 226);
+   border-radius: 20px;
+   margin-left: 15px;
+   margin-right: 5px;
+}
+
+aside > h2 {
+   font-size: 1.5em;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: rgb(71, 20, 18);
+   background-color: rgb(250, 182, 169);
+   border-radius: 20px 20px 0px 0px;
+}
+
+aside#aside2 > figure > a > img {
+   width: 90%;
+}
+
+aside > p {
+   font-family: mplus medium;
+   font-size: 1em;
+   width: 90%;
+   text-align: left;
+   margin-left: 5%;
+   margin-top: 10px;
+   margin-bottom: 5px;
+   color: rgb(90, 24, 21);
+}
+
+figcaption.date {
+   margin-left: 5%;
+   text-align: left;
+}
+
+figure > a:hover, figure > a:active {
+   filter: opacity(65%);
+}
+
+figcaption#last-date {
+   margin-left: 5%;
+   margin-bottom: 10px;
+   text-align: left;
+}
+
+p, figcaption {
+   color: rgb(90, 24, 21);
+}
+
+figcaption.video, figcaption.date, figcaption#last-date {
+   font-family: mplus light;
+   font-size: .9em;
+}
+
+figcaption.audio {
+   font-family: mplus bold;
+   margin: 10px auto;
+   width: 95%;
+}
+
+audio {
+   width: 90%;
+   margin-top: auto;
+   margin-bottom: 10px;
+   margin-right: auto;
+   margin-left: auto;
+   filter: invert(100%) opacity(50%) contrast(100%);
+}
+
+/*Layout*/
+
+footer {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-areas: "title         title"
+                        "group-socials member-socials";
+   grid-row-gap: 15px;
+}
+
+#title {
+   grid-area: title;
+}
+
+#group-socials {
+   grid-area: group-socials;
+}
+
+#member-socials {
+   grid-area: member-socials;
+}

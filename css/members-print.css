@@ -1,0 +1,80 @@
+nav, footer, aside {
+    display: none;
+}
+
+figure > img {
+    width: 4.5in;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+section {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#seulgi, #wendy, #joy, #yeri {
+    page-break-before: always;
+}
+
+article > section > figure > figcaption {
+    font-family: mplus extra bold;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+li {
+    text-align: center;
+    color: rgb(90, 24, 21);
+}
+
+#link {
+    font-family: mplus regular;
+    margin-left: 10px;
+}
+
+a {
+    color: rgb(90, 24, 21);
+    text-decoration: none;
+}
+
+a::after {
+    content: " (" attr(href) ") ";
+    word-wrap: break-word;
+}
+
+@page {
+    size: 8.5in 11in;
+    margin: .5in;
+}
+
+/*layout*/
+
+body {
+    grid-template-areas: "header"
+                         "h1"
+                         "members"
+                         "link";
+    grid-row-gap: 15px;
+}
+
+#head {
+    grid-area: header;
+}
+
+.members {
+    grid-area: members;
+}
+
+#link {
+    grid-area: link;
+}

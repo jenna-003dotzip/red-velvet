@@ -1,0 +1,49 @@
+nav, footer, aside {
+    display: none;
+}
+
+article > section > h2, h3, article > section > p {
+    color: rgb(71, 20, 18);
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+article > section > h2 {
+    font-family: mplus extra bold;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: .9em;
+    font-family: mplus bold;
+}
+
+article > section > p {
+    padding-bottom: 5px;
+}
+
+h2#break {
+    page-break-before: always;
+}
+
+@page {
+    size: auto;
+    margin: .5in;
+}
+
+/*layout*/
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+                         "article";
+    grid-row-gap: 15px;
+}
+
+#head {
+    grid-area: header;
+}
+
+#article {
+    grid-area: article;
+}

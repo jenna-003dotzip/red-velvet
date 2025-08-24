@@ -1,0 +1,93 @@
+body {
+    box-shadow: rgb(153, 111, 102) 10px 0px 50px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#irene, #wendy {
+    padding-right: 10px;
+}
+
+#yeri {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+article > section > figure > figcaption {
+    font-family: mplus extra bold;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+li {
+    text-align: center;
+    color: rgb(90, 24, 21);
+}
+
+#aside1 {
+    height: fit-content;
+}
+
+#aside2 {
+    margin-top: auto;
+    position: relative;
+    top: -725px;
+}
+
+#link {
+    font-family: mplus regular;
+    margin-left: 10px;
+}
+
+div a:link, 
+div a:visited {
+   color: rgb(90, 24, 21);
+}
+
+div a:hover, 
+div a:active {
+   color: rgb(252, 165, 148);
+}
+
+/*layout*/
+
+body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "header  header"
+                         "aside  h1"
+                         "aside   members"
+                         "aside   link"
+                         "footer  footer";
+    grid-row-gap: 15px;
+}
+
+#head {
+    grid-area: header;
+}
+
+.aside {
+    grid-area: aside;
+    grid-template-rows: auto;
+}
+
+.members {
+    grid-area: members;
+}
+
+#link {
+    grid-area: link;
+}
+
+#foot {
+    grid-area: footer;
+}

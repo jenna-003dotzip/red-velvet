@@ -1,0 +1,54 @@
+aside, footer, nav {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: rgb(71, 20, 18);
+}
+
+form {
+    margin-right: 15px;
+    margin-left: 10px;
+    background-color: rgb(250, 230, 226);
+    border: 2px solid rgb(143, 38, 34);
+    border-radius: 20px;
+    color: rgb(71, 20, 18);
+}
+
+fieldset {
+    border: none;
+}
+
+select {
+    vertical-align: top;
+}
+
+input, select {
+    background-color: rgb(255, 245, 243);
+    border: 1px solid rgb(143, 38, 34);
+    color: rgb(71, 20, 18);
+    font-family: mplus regular;
+}
+
+@page {
+    size: 8.5in 11in;
+    margin: .5in;
+}
+
+/*layout*/
+body {
+    display: grid;
+    grid-template-areas: "header"
+                         "article";
+    grid-row-gap: 15px;
+}
+
+#head {
+    grid-area: header;
+}
+
+#article {
+    grid-area: article;
+}

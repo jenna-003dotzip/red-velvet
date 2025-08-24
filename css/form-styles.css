@@ -1,0 +1,66 @@
+body {
+    box-shadow: rgb(153, 111, 102) 10px 0px 50px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: rgb(71, 20, 18);
+}
+
+form {
+    margin-right: 15px;
+    margin-left: 10px;
+    background-color: rgb(250, 230, 226);
+    border: 2px solid rgb(143, 38, 34);
+    border-radius: 20px;
+    color: rgb(71, 20, 18);
+}
+
+fieldset {
+    border: none;
+}
+
+select {
+    vertical-align: top;
+}
+
+input, select {
+    background-color: rgb(255, 245, 243);
+    border: 1px solid rgb(143, 38, 34);
+    color: rgb(71, 20, 18);
+    font-family: mplus regular;
+}
+
+/*layout*/
+body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "header  header"
+                         "aside1   article"
+                         "aside2   article"
+                         "footer  footer";
+    grid-row-gap: 15px;
+}
+
+#head {
+    grid-area: header;
+}
+
+#aside1 {
+    grid-area: aside1;
+    grid-template-rows: auto;
+}
+
+#aside2 {
+    grid-area: aside2;
+    grid-template-rows: auto;
+}
+
+#article {
+    grid-area: article;
+}
+
+#foot {
+    grid-area: footer;
+}
