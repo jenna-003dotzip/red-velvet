@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign up for our Newsletter</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="./css/reset.css" rel="stylesheet"/>
+    <link href="./css/shared.css" rel="stylesheet"/>
+    
+    <link href="./css/form-styles.css" rel="stylesheet" media="screen"/>
+    <link href="./css/form-print.css" rel="stylesheet" media="print"/>
+</head>
+
+<body>
+    <header id="head">
+        <a href="index.html"><img src="./images/rv-header-final.png"></a> 
+        <nav>
+            <ul>
+              <li>
+                  <a href="./index.html">About<br>the Group</a>
+              </li>
+              <li>
+                  <a href="./members.html">Meet the<br>Members</a>
+              </li>
+              <li>
+                  <a href="./music.html">Music<br>Guide</a>
+              </li>
+              <li>
+                  <a href="./history.html">Red Velvet's<br>Career</a>
+              </li>
+              <li>
+                  <a href="./form.html">Sign up for<br>our Newsletter</a>
+              </li>
+            </ul>
+         </nav>
+    </header>
+    <article id="article">
+        <section>
+            <h1>Sign up for our Newsletter!</h1>
+            <p><h3>You can sign up to recieve updates by email, text, or both.</h3></p>
+        </section>
+        <section>
+            <form method="post">
+                <fieldset>
+                    <label>
+                        Name
+                        <input name="firstName" id="firstName" type="text" placeholder="first name" required/>
+                        <input name="lastName" id="lastName" type="text" placeholder="last name"/>
+                    </label>
+                    <br>
+                    <label>
+                        Email
+                        <input name="email" id="email" type="email" placeholder="example@mail.com"/>
+                    </label>
+                    <br>
+                    <label>
+                        Phone Number
+                        <input name="cell" id="cell" type="tel" placeholder="(nnn)nnn-nnnn"/>
+                    </label>
+                    <br>
+                    <label>
+                        What do you want us to send you? (you can select multiple)
+                        <select name="newsletterInfo" id="info" size="3" multiple>
+                            <option value="news">Red Velvet in the News</option>
+                            <option value="fandom">Fandom Stuff</option>
+                            <option value="content">Red Velvet Content Updates</option>
+                        </select>
+                    </label>
+                    <div id="buttons">
+                        <input type="reset" value="Reset"/>
+                        <input type="submit" value="Submit"/>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </article>
+    <aside id="aside1">
+        <h2>Song of the Day</h2>
+        <figure>
+            <figcaption class="audio">장미꽃 향기는 바람에 날리고 (Rose Scent Breeze)</figcaption>
+            <audio controls>
+                <source src="./media/rose-scent-breeze.mp3"/>
+            </audio>
+        </figure>
+   </aside>
+   <aside id="aside2">
+        <h2>Latest News</h2>
+        <p>Red Velvet Announces 4th Concert Tour Titled R to V</p>
+        <figure>
+            <a href="https://www.soompi.com/article/1575324wpp/red-velvet-announces-dates-and-cities-for-upcoming-world-tour-r-to-v" target="_blank">
+                <img src="./images/tour-announcement.png"></a>
+            <figcaption class="date">3/26/2023</figcaption>
+        </figure>
+
+        <p>Wendy Features in Singles Magazine</p>
+        <figure>
+            <a href="https://www.soompi.com/article/1565593wpp/red-velvets-wendy-expresses-gratitude-to-fans-and-what-they-mean-to-her-teases-new-music-coming-this-spring-and-more" target="_blank">
+                <img src="./images/wendy-singles-magazine.png"></a>
+            <figcaption class="date">2/6/2023</figcaption>
+        </figure>
+
+        <p>Red Velvet Become Million Sellers With Album "The ReVe Festival 2022 - Birthday"</p>
+        <figure>
+            <a href="https://www.soompi.com/article/1564157wpp/red-velvet-officially-becomes-million-sellers-with-the-reve-festival-2022-birthday" target="_blank">
+                <img src="./images/million-seller-pic.png"></a>
+            <figcaption id="last-date">1/24/2023</figcaption>
+        </figure>
+   </aside>
+    <footer id="foot">
+        <h4 id="title">Connect with Red Velvet!</h4>
+            <ul id="group">
+                <li class="heading">
+                    Group Socials
+                <li>
+                    <a href="https://www.youtube.com/@redvelvet" target="_blank">Group Youtube Channel</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@SMTOWN" target="_blank">SM Town Youtube Channel</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/redvelvet.smtown/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/RVsmtown" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/RedVelvet/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@redvelvet_smtown" target="_blank">TikTok</a>
+                </li>
+                <li>
+                    <a href="https://www.smtown.com/artist/musician/10017" target="_blank">Official Website</a>
+                </li>
+            </ul>
+            <ul id="member">
+                <li class="heading">
+                    Member Socials
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/renebaebae/" target="_blank">Irene's Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/hi_sseulgi/" target="_blank">Seulgi's Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/todayis_wendy/" target="_blank">Wendy's Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_imyour_joy/" target="_blank">Joy's Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/yerimiese/" target="_blank">Yeri's Instagram</a>
+                </li>
+            </ul>
+    </footer>
+</body>
+
+</html>
